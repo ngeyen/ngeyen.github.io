@@ -18,14 +18,14 @@
   <meta property="og:title" content="Ngeyen Victory — Academic Portfolio">
   <meta property="og:description" content="Applied ML Engineer focused on efficient ML, equivariant NNs, CV, and NLP. Explore projects, research, and publications.">
   <meta property="og:url" content="https://ngeyen.github.io/">
-  <meta property="og:image" content="https://ngeyen.github.io/assets/images/ngeyen.jpeg">
+  <meta property="og:image" content="https://ngeyen.github.io/assets/images/image.jpg">
   <meta property="og:site_name" content="Ngeyen Victory">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Ngeyen Victory — Academic Portfolio">
   <meta name="twitter:description" content="Applied ML Engineer focused on efficient ML, equivariant NNs, CV, and NLP.">
-  <meta name="twitter:image" content="https://ngeyen.github.io/assets/images/ngeyen.jpeg">
+  <meta name="twitter:image" content="https://ngeyen.github.io/assets/images/image.jpg">
 
   <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
 
@@ -41,6 +41,9 @@
     html, body { font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
     /* Hide original decorations if any leaked in */
     .separator { display: none; }
+    .hydrated {
+      z-index: -1;
+    }
   </style>
 </head>
 
@@ -50,21 +53,43 @@
   <main class="max-w-7xl mx-auto px-4 md:px-8 py-6 grid grid-cols-1 md:grid-cols-[22rem,1fr] gap-6">
 
     <!-- SIDEBAR -->
-    <aside class="rounded-2xl bg-white bg-opacity-60 backdrop-filter backdrop-blur-md shadow-2xl p-4 md:sticky md:top-6 md:h-[calc(100vh-3rem)] md:overflow-y-auto" data-sidebar>
+    <aside class="rounded-2xl bg-white bg-opacity-60 backdrop-filter backdrop-blur-md shadow-2xl p-4 md:sticky md:top-16 md:h-[calc(100vh-3rem)] md:overflow-y-auto" data-sidebar>
       <div class="flex items-center gap-4">
         <figure class="w-16 h-16 rounded-full overflow-hidden ring-2 ring-white ring-opacity-60 shadow">
           <img src="./assets/images/ngeyen.jpeg" alt="Ngeyen Victory" class="w-full h-full object-cover">
         </figure>
-        <div>
-          <h1 class="text-xl font-semibold">Ngeyen Victory</h1>
+        <div class=" flex-grow">
+          <h1 class="text-xl font-semibold">Ngeyen Yinkfu (Victory)</h1>
           <p class="text-sm text-gray-700">Applied ML Engineer</p>
+          <p class="text-sm text-gray-500">Carnegie Mellon University</p>
+          <ul class="flex gap-3 mb-5 mt-2">
+          <li class="text-sm">
+            <a href="https://github.com/ngeyen" target="_blank" rel="noopener"
+               class="inline-flex items-center justify-center py-1 px-2 rounded-xl bg-white bg-opacity-70 shadow hover:bg-opacity-80">
+              <ion-icon name="logo-github"></ion-icon> &nbsp;GitHub
+            </a>
+            
+          </li>
+          <li>•</li>
+          <li class="text-sm">
+            <a href="https://linkedin.com/in/ngeyen" target="_blank" rel="noopener"
+               class="inline-flex items-center justify-center py-1 px-2 rounded-xl bg-white bg-opacity-70 shadow hover:bg-opacity-80">
+              <ion-icon name="logo-linkedin"></ion-icon> &nbsp;LinkedIn
+            </a>
+          </li>
+          <li>•</li>
+          <li>
+             <button class=" text-sm px-3 py-1 rounded-md bg-opacity-70 shadow hover:bg-opacity-80 flex items-center justify-between bg-gradient-to-br from-blue-500 to-purple-600 text-white" 
+             data-sidebar-btn aria-expanded="false">
+        <span>Contact Me</span>
+        <svg class="w-4 h-4 transform transition-transform" data-caret viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 011.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
+      </button>
+          </li>
+        </ul>
         </div>
       </div>
 
-      <button class="mt-4 w-full text-sm px-3 py-2 rounded-md bg-white bg-opacity-70 shadow hover:bg-opacity-80 flex items-center justify-between" data-sidebar-btn aria-expanded="false">
-        <span>Show contacts</span>
-        <svg class="w-4 h-4 transform transition-transform" data-caret viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 011.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
-      </button>
+    
 
       <div class="mt-4 space-y-4 hidden" data-sidebar-more>
         <ul class="space-y-3">
@@ -90,11 +115,24 @@
 
           <li class="flex items-start gap-3">
             <div class="w-9 h-9 rounded-xl bg-white bg-opacity-70 shadow flex items-center justify-center text-gray-600 flex-shrink-0">
-              <ion-icon name="globe-outline"></ion-icon>
+              <ion-icon name="document-text-outline"></ion-icon>
             </div>
             <div>
-              <p class="text-xs uppercase tracking-wide text-gray-500">Website</p>
-              <a class="text-sm text-blue-600 hover:underline" href="https://github.com/ngeyen" target="_blank" rel="noopener">github.com/ngeyen</a>
+              <p class="text-xs uppercase tracking-wide text-gray-500">Resume</p>
+              <a class="text-sm text-blue-600 hover:underline" href="assets/docs/NgeyenResume.pdf" target="_blank" rel="noopener">View PDF</a>
+            </div>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <div class="w-9 h-9 rounded-xl bg-white bg-opacity-70 shadow flex items-center justify-center text-gray-600 flex-shrink-0">
+              <ion-icon name="logo-github">
+
+              </ion-icon>
+            </div>
+            <div>
+              <p class="text-xs uppercase tracking-wide text-gray-500">GitHub</p>
+              <a class="text-sm text-blue-600 hover:underline" href="https://github.com/ngeyen" 
+              target="_blank" rel="noopener">github.com/ngeyen</a>
             </div>
           </li>
 
@@ -109,22 +147,6 @@
           </li>
         </ul>
 
-        <div class="pt-2"></div>
-
-        <ul class="flex gap-3">
-          <li>
-            <a href="https://github.com/ngeyen" target="_blank" rel="noopener"
-               class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-white bg-opacity-70 shadow hover:bg-opacity-80">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-          <li>
-            <a href="https://linkedin.com/in/ngeyen" target="_blank" rel="noopener"
-               class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-white bg-opacity-70 shadow hover:bg-opacity-80">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-        </ul>
       </div>
     </aside>
 
@@ -139,7 +161,6 @@
           <li><button class="navbar-link px-3 py-2 rounded-md text-sm font-medium hover:bg-white hover:bg-opacity-60" data-nav-link>Portfolio</button></li>
           <li><button class="navbar-link px-3 py-2 rounded-md text-sm font-medium hover:bg-white hover:bg-opacity-60" data-nav-link>Research</button></li>
           <li><button class="navbar-link px-3 py-2 rounded-md text-sm font-medium hover:bg-white hover:bg-opacity-60" data-nav-link>Publications</button></li>
-          <li><button class="navbar-link px-3 py-2 rounded-md text-sm font-medium hover:bg-white hover:bg-opacity-60" data-nav-link>Contact</button></li>
         </ul>
       </nav>
 
@@ -245,18 +266,23 @@
             </li>
             <li>
               <h4 class="font-medium">Research Software Engineer · Universität Witten/Herdecke (Remote)</h4>
-              <span class="text-sm text-gray-600">May 2023 — Mar 2024</span>
-              <p class="text-sm text-gray-700">Co‑led FeverApp redesign (20k+ users); features across Flutter/Laravel/Django/FastAPI.</p>
+              <span class="text-sm text-gray-600">May 2023 — Dec 2023</span>
+              <p class="text-sm text-gray-700">Assisted in FeverApp redesign (20k+ users); features across Flutter/Laravel/Django/FastAPI.</p>
             </li>
             <li>
               <h4 class="font-medium">Research Data Engineer · Mental Health Research (Remote)</h4>
-              <span class="text-sm text-gray-600">Dec 2022 — May 2023</span>
+              <span class="text-sm text-gray-600">Dec 2022 — Jun 2023</span>
               <p class="text-sm text-gray-700">Python information engine (+80% retrieval); 200+ sources across 20 categories.</p>
+            </li>
+            <li>
+              <h4 class="font-medium">Research Assistant · Imperial College London (Remote)</h4>
+              <span class="text-sm text-gray-600">May 2021 — Sep 2022</span>
+              <p class="text-sm text-gray-700">Collected and analyzed COVID‑19 policy data (20+ countries); compiled data from 80+ websites, 500+ documents, and 300+ videos (HDF4) to improve research accessibility.</p>
             </li>
           </ol>
         </section>
 
-        <!-- Teaching (added per request) -->
+        <!-- Teaching -->
         <section class="mb-8">
           <div class="flex items-center gap-2 mb-2 text-gray-700">
             <div class="w-9 h-9 rounded-xl bg-white bg-opacity-70 shadow flex items-center justify-center">
@@ -266,8 +292,8 @@
           </div>
           <ol class="space-y-4">
             <li>
-              <h4 class="font-medium">Teaching Assistant · Research Methods in Engineering · Carnegie Mellon University</h4>
-              <span class="text-sm text-gray-600">Dates TBD</span>
+              <h4 class="font-medium">Graduate Teaching Assistant · Research Methods in Engineering · Carnegie Mellon University</h4>
+              <span class="text-sm text-gray-600">Aug. 2025 — Dec. 2025</span>
               <p class="text-sm text-gray-700">Supported instruction, recitations, and feedback.</p>
             </li>
             <li>
@@ -321,7 +347,7 @@
             </li>
             <li>
               <h4 class="font-medium">Google Crowdsource ML Facilitator</h4>
-              <span class="text-sm text-gray-600">Sep 2021 — Sep 2022</span>
+              <span class="text-sm text-gray-600">Dec 2021 — Dec 2022</span>
               <p class="text-sm text-gray-700">Community facilitation for ML tasks and events.</p>
             </li>
             <li>
@@ -342,6 +368,9 @@
             <li class="rounded-lg p-3 bg-white bg-opacity-70 backdrop-filter backdrop-blur-md shadow">Angular — 70%</li>
             <li class="rounded-lg p-3 bg-white bg-opacity-70 backdrop-filter backdrop-blur-md shadow">Django / Flask / FastAPI — 95%</li>
             <li class="rounded-lg p-3 bg-white bg-opacity-70 backdrop-filter backdrop-blur-md shadow">Data Engineering — 80%</li>
+            <li class="rounded-lg p-3 bg-white bg-opacity-70 backdrop-filter backdrop-blur-md shadow">SQL / NoSQL — 85%</li>
+            <li class="rounded-lg p-3 bg-white bg-opacity-70 backdrop-filter backdrop-blur-md shadow">Git / GitHub — 90%</li>
+            <li class="rounded-lg p-3 bg-white bg-opacity-70 backdrop-filter backdrop-blur-md shadow">ReactJs / NodeJs — 70%</li>
           </ul>
         </section>
       </article>
@@ -538,9 +567,9 @@
             </li>
 
             <li class="rounded-xl overflow-hidden bg-white bg-opacity-70 backdrop-filter backdrop-blur-md shadow-md">
-              <a href="./assets/images/Applied_Deep_Learning.pdf" target="_blank" rel="noopener" class="block">
+              <a href="./assets/docs/deeplearning.pdf" target="_blank" rel="noopener" class="block">
                 <figure class="h-40 bg-gray-100 overflow-hidden">
-                  <img src="./assets/images/cv_paper.png" alt="Applied Deep Learning report" class="w-full h-full object-cover">
+                  <img src="./assets/images/deepLearning.png" alt="Applied Deep Learning report" class="w-full h-full object-cover">
                 </figure>
                 <div class="p-4">
                   <p class="text-xs text-gray-500">Report · 2024</p>
@@ -553,7 +582,7 @@
             <li class="rounded-xl overflow-hidden bg-white bg-opacity-70 backdrop-filter backdrop-blur-md shadow-md">
               <a href="./assets/docs/ngeyen_entity_recognition.pdf" target="_blank" rel="noopener" class="block">
                 <figure class="h-40 bg-gray-100 overflow-hidden">
-                  <img src="./assets/images/cv_paper.png" alt="Entity Recognition report" class="w-full h-full object-cover">
+                  <img src="./assets/images/nlp.png" alt="Entity Recognition report" class="w-full h-full object-cover">
                 </figure>
                 <div class="p-4">
                   <p class="text-xs text-gray-500">Report · 2023</p>
@@ -591,32 +620,7 @@
         </section>
       </article>
 
-      <!-- CONTACT -->
-      <article class="contact hidden" data-page="contact">
-        <header class="mb-4">
-          <h2 class="text-2xl font-semibold">Contact</h2>
-        </header>
-
-        <section class="mb-6">
-          <figure class="rounded-xl overflow-hidden shadow-lg">
-            <iframe src="https://www.google.com/maps?q=Kigali,+Rwanda&output=embed" width="100%" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section>
-          <h3 class="text-lg font-medium mb-2">Contact Form</h3>
-          <form class="space-y-3 max-w-xl" action="#" data-form>
-            <div class="grid sm:grid-cols-2 gap-3">
-              <input class="form-input px-3 py-2 rounded border border-gray-300" type="text" name="fullname" placeholder="Full name" required data-form-input>
-              <input class="form-input px-3 py-2 rounded border border-gray-300" type="email" name="email" placeholder="Email address" required data-form-input>
-            </div>
-            <textarea class="form-input px-3 py-2 rounded border border-gray-300 w-full" name="message" rows="5" placeholder="Your Message" required data-form-input></textarea>
-            <button class="form-btn inline-flex items-center gap-2 px-4 py-2 rounded bg-gray-900 text-white disabled:opacity-40" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon><span>Send Message</span>
-            </button>
-          </form>
-        </section>
-      </article>
+    
     </div>
   </main>
 
